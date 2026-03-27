@@ -22,13 +22,26 @@
 
 //////////////// Lazy Loading
 
-import LazyLoading from './Practicals/LazyLoading'
+// import LazyLoading from './Practicals/LazyLoading'
+
+// const App = () => {
+//   return (
+//     <>
+//     <LazyLoading/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+//////////////////////////////////////// Pure component///////////////////
+
+import PureComponent from "./Practicals/PureComponent"
 
 const App = () => {
   return (
-    <>
-    <LazyLoading/>
-    </>
+    <PureComponent name = "Aswathy"/>
   )
 }
 

@@ -6,12 +6,14 @@ class Detailes{
     }
 
     print(){
-        console.log("Name: ", this.name)
-        console.log("Age: ", this.age)
-        console.log("Place: ", this.place)
+        return{
+            name: this.name,
+            age: this.age,
+            place: this.place
+        }
     }
 }
 
 let res = new Detailes("Aswathy", 22, "Thrissur")
 
-res.print()
+console.log(res.print())
