@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/aswathy2018/2nd-Full-Domain-Practicals/issues"
   },
-  "homepage": "https://github.com/aswathy2018/2nd-Full-Domain-Practicals#readme"
+  "homepage": "https://github.com/aswathy2018/2nd-Full-Domain-Practicals#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
