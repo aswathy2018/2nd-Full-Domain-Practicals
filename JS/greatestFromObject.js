@@ -34,6 +34,11 @@ let key2 = ""
 
 for(let val in obj){
     if(obj[val]>fir){
+
+        // fir = obj[val]
+        // key1 = val
+
+        
         sec = fir
         key2 = key1
 
