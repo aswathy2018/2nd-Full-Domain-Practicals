@@ -37,12 +37,46 @@
 
 //////////////////////////////////////// Pure component///////////////////
 
-import PureComponent from "./Practicals/PureComponent"
+// import PureComponent from "./Practicals/PureComponent"
+
+// const App = () => {
+//   return (
+//     <PureComponent name = "Aswathy"/>
+//   )
+// }
+
+// export default App
+
+
+import { useState } from "react"
+import Demo from "../Demo"
 
 const App = () => {
+  let [msg, setMsg] = useState("")
+  
+  let handle = (data)=>{
+    setMsg(data)
+  }
   return (
-    <PureComponent name = "Aswathy"/>
+    <div>
+      <h2>Hii : {msg}</h2>
+      <Demo props = {handle}/>
+    </div>
   )
 }
 
 export default App
+
+
+// import React from 'react'
+// import Counter from '../Counter'
+
+// const App = () => {
+//   return (
+//     <div><Counter/></div>
+//   )
+// }
+
+// export default App
+
+
