@@ -48,24 +48,24 @@
 // export default App
 
 
-import { useState } from "react"
-import Demo from "../Demo"
+// import { useState } from "react"
+// import Demo from "../Demo"
 
-const App = () => {
-  let [msg, setMsg] = useState("")
+// const App = () => {
+//   let [msg, setMsg] = useState("")
   
-  let handle = (data)=>{
-    setMsg(data)
-  }
-  return (
-    <div>
-      <h2>Hii : {msg}</h2>
-      <Demo props = {handle}/>
-    </div>
-  )
-}
+//   let handle = (data)=>{
+//     setMsg(data)
+//   }
+//   return (
+//     <div>
+//       <h2>Hii : {msg}</h2>
+//       <Demo props = {handle}/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
 // import React from 'react'
@@ -80,3 +80,15 @@ export default App
 // export default App
 
 
+import React from 'react'
+import Performance from './Practicals/Performance'
+
+const App = () => {
+  return (
+    <>
+    <Performance/>
+    </>
+  )
+}
+
+export default App
