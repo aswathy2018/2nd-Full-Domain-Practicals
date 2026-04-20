@@ -9,7 +9,7 @@ const Performance = () => {
     console.log("Parent component rendered");
   return (
     <div>
-        <h1>Performance optimization example..</h1>
+        <h1>Performance Optimization Example..</h1>
         <button onClick={() => setCount(count+1)}>+</button>
         <input value={text} onChange={(e)=>setText(e.target.value)}/>
 
