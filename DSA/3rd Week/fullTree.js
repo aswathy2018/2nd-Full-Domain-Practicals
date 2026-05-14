@@ -70,7 +70,7 @@ class Tree {
 const tree = new Tree();
 
 tree.addChild(null, 1);
-tree.addChild(1, 2);
+tree.addChild();
 tree.addChild(1, 3);
 tree.addChild(2, 4);
 tree.addChild(2, 5);

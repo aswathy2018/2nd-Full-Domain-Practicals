@@ -5,14 +5,14 @@ class Node{
     }
 }
 
-class LinkedList{
+class Linkedlist{
     constructor(){
         this.head = null
         this.size = 0
     }
 
     isEmpty(){
-        return this.size == 0
+        return this.size===0
     }
 
     prepend(val){
@@ -43,9 +43,45 @@ class LinkedList{
         this.size++
     }
 
+    createCycle(pos){
+        if(pos<0 || pos>=this.size){
+            console.log("Cycling not possible");
+        }
+
+        let node = this.head
+        let index = 0
+
+        while(index<pos){
+            node = node.next
+            index++
+        }
+
+        let last = this.head
+
+        while(last.next){
+            last = last.next
+        }
+        last.next = node
+    }
+
+    hasCycle(){
+        let slow = this.head
+        let fast = this.head
+
+        while(fast && fast.next){
+            slow = slow.next
+            fast = fast.next.next
+
+            if(slow==fast){
+                return true
+            }
+        }
+        return false
+    }
+
     print(){
         if(this.isEmpty()){
-            console.log("List is empty..")
+            console.log("List is empty..");
             return
         }
 
@@ -60,13 +96,16 @@ class LinkedList{
     }
 }
 
-let res = new LinkedList()
+let res = new Linkedlist()
 
 let i=1
-
-while(i<10){
+while(i<=5){
     res.append(i)
     i++
 }
 
-console.log(res.print())
+console.log(res.print());
+
+console.log("List before cycling: ", res.hasCycle())
+res.createCycle(1)
+console.log("List after cycling: ", res.hasCycle());
