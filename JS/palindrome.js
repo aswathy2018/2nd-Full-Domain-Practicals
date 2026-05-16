@@ -1,15 +1,32 @@
-let arr = [1, 2, 3, 2, 1]
-function palin(arr) {
-    let nArr = []
-    for (let i = arr.length - 1; i >= 0; i--) {
-        nArr.push(arr[i])
-    }
+// let arr = [1, 2, 3, 2, 1]
+// function palin(arr) {
+//     let nArr = []
+//     for (let i = arr.length - 1; i >= 0; i--) {
+//         nArr.push(arr[i])
+//     }
 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] !== nArr[i]) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] !== nArr[i]) {
+//             return false
+//         }
+//     }
+//     return true
+// }
+// console.log(palin(arr))
+
+
+
+
+
+let arr = [1,2,3,2,1]
+
+function palindrome(arr){
+    for(let i=0 ; i<arr.length ; i++){
+        if(arr[i]!==arr[arr.length-1-i]){
             return false
         }
     }
     return true
 }
-console.log(palin(arr))
+
+console.log(palindrome(arr))

@@ -1,5 +1,6 @@
 /////////////Child to parrent
 
+
 // import React, { useState } from 'react'
 // import Child from '../src/Practicals/Child'
 
@@ -80,14 +81,35 @@
 // export default App
 
 
-import React from 'react'
-import Performance from './Practicals/Performance'
+// import React from 'react'
+// import Performance from './Practicals/Performance'
 
+// const App = () => {
+//   return (
+//     <>
+//     <Performance/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
+import { useState } from "react"
+import Child from './Practicals/Child'
 const App = () => {
-  return (
-    <>
-    <Performance/>
-    </>
+  let [data, setData] = useState("")
+
+  let res = (data) => {
+    setData(data)
+  }
+
+  return(
+    <div>
+      <h2>Message: {data}</h2>
+      <Child props = {res}/>
+    </div>
   )
 }
 
