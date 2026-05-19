@@ -1,15 +1,31 @@
-import { useState } from "react";
+// import { useState } from "react";
 
-const Demo = ({props}) =>{
+// const Demo = ({props}) =>{
 
-    let child = ()=>{
-        props("Hloo i'm child..")
-    }
-    return (
-        <div>
-            <button onClick={()=>child()}>Ok</button>
-        </div>
-    )
-}
+//     let child = ()=>{
+//         props("Hloo i'm child..")
+//     }
+//     return (
+//         <div>
+//             <button onClick={()=>child()}>Ok</button>
+//         </div>
+//     )
+// }
 
-export default Demo;
+// export default Demo;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

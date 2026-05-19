@@ -96,21 +96,44 @@
 
 
 
-import { useState } from "react"
-import Child from './Practicals/Child'
-const App = () => {
-  let [data, setData] = useState("")
+// import { useState } from "react"
+// import Child from './Practicals/Child'
+// const App = () => {
+//   let [data, setData] = useState("")
 
-  let res = (data) => {
-    setData(data)
-  }
+//   let res = (data) => {
+//     setData(data)
+//   }
 
-  return(
-    <div>
-      <h2>Message: {data}</h2>
-      <Child props = {res}/>
-    </div>
-  )
-}
+//   return(
+//     <div>
+//       <h2>Message: {data}</h2>
+//       <Child props = {res}/>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
+
+
+
+// import React from 'react'
+// import { CounterProvider } from '../Demo'
+// import Counter from './Practicals/Counter'
+
+// const App = () => {
+//   return (
+//     <CounterProvider>
+//       <Counter/>
+//       </CounterProvider>
+//   )
+// }
+
+// export default App
+
+
+
+
+
+
+
