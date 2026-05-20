@@ -133,7 +133,15 @@
 
 
 
+import React from 'react'
+import Fetch from './Practicals/fetch'
 
+const App = () => {
+  return (
+    <>
+    <Fetch/>
+    </>
+  )
+}
 
-
-
+export default App
