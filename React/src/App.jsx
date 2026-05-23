@@ -133,13 +133,31 @@
 
 
 
+// import React from 'react'
+// import Fetch from './Practicals/fetch'
+
+// const App = () => {
+//   return (
+//     <>
+//     <Fetch/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
+
 import React from 'react'
-import Fetch from './Practicals/fetch'
+import ChildRedux from './Practicals/ChildRedux'
+import Parent from './Practicals/Parent'
 
 const App = () => {
   return (
     <>
-    <Fetch/>
+    <Parent/>
+    <ChildRedux/>
     </>
   )
 }
