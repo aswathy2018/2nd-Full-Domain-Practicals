@@ -148,18 +148,25 @@
 
 
 
+// import React from 'react'
+// import ChildRedux from './Practicals/ChildRedux'
+// import Parent from './Practicals/Parent'
 
-import React from 'react'
-import ChildRedux from './Practicals/ChildRedux'
-import Parent from './Practicals/Parent'
+// const App = () => {
+//   return (
+//     <>
+//     <Parent/>
+//     <ChildRedux/>
+//     </>
+//   )
+// }
 
-const App = () => {
-  return (
-    <>
-    <Parent/>
-    <ChildRedux/>
-    </>
-  )
-}
+// export default App
 
-export default App
+
+
+
+
+
+
+
