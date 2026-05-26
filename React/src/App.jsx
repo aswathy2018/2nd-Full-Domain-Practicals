@@ -165,8 +165,18 @@
 
 
 
+import React from 'react'
+import ToggleProvider from './context/ToggleContext'
+import Button from './Button'
+import Toggle from './Toggle'
 
+const App = () => {
+  return (
+    <ToggleProvider>
+        <Button/>
+        <Toggle/>
+    </ToggleProvider>
+  )
+}
 
-
-
-
+export default App
