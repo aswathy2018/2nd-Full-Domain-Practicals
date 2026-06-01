@@ -14,5 +14,5 @@ class Getting{
 
 let res = new Getting()
 
-res.setting = "Aswathy"
+res.setting = "Aswathy Sudhakaran"
 console.log(res.getting)
