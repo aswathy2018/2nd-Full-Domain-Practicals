@@ -2,59 +2,61 @@ class Stack{
     constructor(){
         this.item = []
     }
-    
+
     isEmpty(){
-        return this.item.length===0
+        return this.item.length==0
     }
-    
+
     push(val){
         this.item.push(val)
     }
-    
+
     pop(){
         if(this.isEmpty()){
-            return "under flow"
+            return "Under flow"
         }
-        
         return this.item.pop()
     }
-    
+
     peek(){
         if(this.isEmpty()){
-            return null
+            return "Empty stack"
         }
         return this.item[this.item.length-1]
     }
-    
-    print(){
-        console.log(this.item)
+
+    display(){
+        console.log(this.item);
     }
-    
+
     sort(){
-        for(let i=0 ; i<this.item.length ; i++){
-            for(let j=0 ; j<this.item.length-1-i ; j++){
-                if(this.item[j]>this.item[j+1]){
-                    let temp = this.item[j]
-                    this.item[j] = this.item[j+1]
-                    this.item[j+1] = temp
-                }
+        let tempStack = new Stack()
+
+        while(!this.isEmpty()){
+            let temp = this.pop()
+
+            while(!tempStack.isEmpty() && tempStack.peek()>temp){
+                this.push(tempStack.pop())
             }
+            tempStack.push(temp)
         }
+        this.item = tempStack.item
     }
 }
 
-let res = new Stack()
+let stack = new Stack();
 
-res.push(3)
-res.push(1)
-res.push(8)
-res.push(2)
-res.push(6)
+stack.push(34);
+stack.push(3);
+stack.push(31);
+stack.push(98);
+stack.push(92);
+stack.push(23);
 
-console.log("Befor sorting")
-res.print()
+console.log("Before sorting:");
+stack.display();
 
+stack.sort();
 
-res.sort()
-console.log("After sorting")
-res.print()
+console.log("After sorting:");
+stack.display();
