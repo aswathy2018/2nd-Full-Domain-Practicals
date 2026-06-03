@@ -1,7 +1,11 @@
 const crypto = require('crypto')
 
 function createOTP(){
-    const otp = crypto.randomInt(100000, 999999).toString()
+    let otp = ''
+
+    for(let i=0 ; i<6 ; i++){
+        otp+=crypto.randomInt(1,10)
+    }
 
     return{
         otp,
