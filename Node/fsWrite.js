@@ -1,7 +1,7 @@
 const fs = require('fs')
 
-fs.writeFile("WriteFile.txt", "Hii.. My name is Aswathy..", function (error){
+fs.writeFile('write.txt', "This is the output of fs.writeFile.. got it??", function(error){
     if(error){
-        console.log("Error occured")
+        console.log("Unable to load..")
     }
 })
