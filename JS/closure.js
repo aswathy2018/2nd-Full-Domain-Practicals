@@ -1,8 +1,15 @@
-function val(){
-    let val = 15
-    function res(){
-        console.log(val)
+function clo(){
+    let a=0
+    function sure(){
+        a++
+        console.log(a)
     }
-    res()
+    return sure
 }
+
+let val = clo()
+
+val()
+val()
+val()
 val()
