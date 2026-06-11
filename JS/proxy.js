@@ -1,3 +1,4 @@
+///////////////////////////////////////////////getting value from a obj///////////////////////////////
 // let person = {
 //     name: "Aswathy"
 // }
@@ -12,6 +13,7 @@
 // console.log(proxy.name)
 
 
+////////////////////To find length of the string ////////////////////
 let user = {
     name: "Aswathy"
 }
@@ -26,3 +28,18 @@ let proxy = new Proxy(user, {
 })
 
 console.log(proxy.length)
+//////////////////////////////Setting value in an obj////////////////////////
+// const user = {};
+
+// const proxy = new Proxy(user, {
+//     set(target, property, value) {
+//         console.log(`Setting ${property}`);
+
+//         target[property] = value;
+
+//         return true;
+//     }
+// });
+
+// proxy.name = "Aswathy";
+// console.log(proxy.name);
