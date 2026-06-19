@@ -5,13 +5,14 @@ class Heap{
 
     insert(val){
         this.heap.push(val)
-        this.bubbleUp(this.heap.length-1)
+        this.bubbleup(this.heap.length-1)
     }
 
-    bubbleUp(index){
+    bubbleup(index){
         while(index>0){
             let parent = Math.floor((index-1)/2)
-            if(this.heap[parent]>this.heap[index]){
+
+            if(this.heap[parent]>=this.heap[index]){
                 break
             }
 
@@ -20,7 +21,7 @@ class Heap{
         }
     }
 
-    deleteRoot(){
+    deleteroot(){
         if(this.heap.length==0){
             return null
         }
@@ -39,29 +40,26 @@ class Heap{
 
     heapify(index){
         while(true){
-            let lar = index
+            let largest = index
             let left = 2*index+1
             let right = 2*index+2
 
-            if(left>this.heap.length && this.heap[lar]>this.heap[left]){
-                ler = left
+            if(left<this.heap.length && this.heap[left]>this.heap[largest]){
+                largest=left
             }
 
-            if(right>this.heap.length && this.heap[lar]>this.heap[right]){
-                lar = right
+            if(right<this.heap.length && this.heap[right]>this.heap[largest]){
+                largest = right
             }
 
-            if(lar==index){
+            if(largest==index){
                 break
             }
 
-            this.swap(lar, index)
-                index = lar
-        }
-    }
+            [this.heap[largest], this.heap[index]] = [this.heap[index], this.heap[largest]]
 
-    swap(index, j){
-        [this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]]
+            index = largest
+        }
     }
 
     print(){
@@ -69,17 +67,20 @@ class Heap{
     }
 }
 
-let node = new Heap()
+let no = new Heap()
 
-node.insert(2)
-node.insert(4)
-node.insert(6)
-node.insert(5)
-node.insert(8)
-node.insert(1)
 
-console.log("Before: ");
-node.print()
+no.insert(11)
+no.insert(32)
+no.insert(4)
+no.insert(7)
+no.insert(57)
+no.insert(12)
 
-console.log("After Deletion: ")
-console.log(node.deleteRoot())
+console.log("Before deleting: ");
+no.print()
+
+
+console.log("Root: ", no.deleteroot())
+console.log("After deleting: ");
+no.print()
