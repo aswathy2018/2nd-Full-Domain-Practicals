@@ -185,16 +185,22 @@
 
 /////////////////Child to parent using context//////////////////////
 
-import React from 'react'
-import ParentContext from './Practicals/ParentContext'
-import ChildToParentContext from './context/ChildToParentContext'
+// import React from 'react'
+// import ParentContext from './Practicals/ParentContext'
 
-const App = () => {
-  return (
-    <>
-      <ParentContext/>
-    </>
-  )
-}
+// const App = () => {
+//   return (
+//     <>
+//       <ParentContext/>
+//     </>
+//   )
+// }
 
-export default App
+// export default App
+
+
+
+
+
+
+
