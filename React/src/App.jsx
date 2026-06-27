@@ -204,3 +204,15 @@
 
 
 
+import React from 'react'
+import Fparent from './Practicals/Fparent'
+
+const App = () => {
+  return (
+    <>
+    <Fparent/>
+    </>
+  )
+}
+
+export default App
