@@ -1,6 +1,6 @@
 class Inheritance{
     person(){
-        console.log("Hii my name is Aswathy")
+        console.log("Hii my name is Athira")
     }
 }
 
