@@ -1,13 +1,25 @@
-const express = require('express')
-const app = express()
-const path = require('path');
+/////////////////////////////////////// Express server ///////////////////////////////////////
 
-app.get('/', (req, res) => {
-    res.send("This is home page..")
-})
+// const express = require('express')
+// const app = express()
 
-app.use((req, res) => {
-  res.status(404).sendFile(path.join(__dirname, '404.html'));
-});
+// app.get('/', (req, res)=>{
+//     res.send("Hii guyss..")
+// })
+// app.get('/home', (req, res)=>{
+//     res.send("How are you..")
+// })
 
-app.listen(3002, ()=>console.log("Server connected.."))
+// app.listen(3002, ()=>console.log("Connected.."))
+
+
+
+// const http = require('http')
+
+// const server = http.createServer((req, res) => {
+//     res.end('Bye byeeee..')
+// })
+
+// server.listen(4023, ()=>console.log("Server connected.."))
+
+
