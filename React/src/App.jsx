@@ -201,18 +201,30 @@
 
 
 
+// import React from 'react'
+// import Fparent from './Practicals/Fparent'
+
+// const App = () => {
+//   return (
+//     <>
+//     <Fparent/>
+//     </>
+//   )
+// }
+
+// export default App
 
 
 
-import React from 'react'
-import Fparent from './Practicals/Fparent'
+// import React from 'react'
+// import CountRef from './Practicals/CountRef'
 
-const App = () => {
-  return (
-    <>
-    <Fparent/>
-    </>
-  )
-}
+// const App = () => {
+//   return (
+//     <>
+//     <CountRef/>
+//     </>
+//   )
+// }
 
-export default App
+// export default App
