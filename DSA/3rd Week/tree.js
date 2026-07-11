@@ -77,7 +77,7 @@ class Tree{
 
 const tree = new Tree()
 
-tree.addChild(null, "A")   // Root
+tree.addChild(null, "A")
 
 tree.addChild("A", "B")
 tree.addChild("A", "C")
