@@ -1,4 +1,4 @@
-/////////////////////////// Also an example for Private access modifier ///////////////
+/////////////////////// Also an example for Private access modifier ///////////////
 
 class Balance{
     #balance = 0
