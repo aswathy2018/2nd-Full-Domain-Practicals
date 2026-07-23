@@ -231,15 +231,27 @@
 
 
 
+// import React from 'react'
+// import TodoApp from './Practicals/TodoApp'
+
+// const App = () => {
+//   return (
+//     <>
+//     <TodoApp/>
+//     </>
+//   )
+// }
+
+// export default App
 
 
 import React from 'react'
-import TodoApp from './Practicals/TodoApp'
+import CounterN from './CounterN'
 
 const App = () => {
   return (
     <>
-    <TodoApp/>
+    <CounterN/>
     </>
   )
 }
