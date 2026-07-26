@@ -12,4 +12,4 @@ function insertion(arr){
     return arr
 }
 
-console.log(insertion([4,2,8,6,1]))
+console.log(insertion([8,2,5,7,1,3]))
