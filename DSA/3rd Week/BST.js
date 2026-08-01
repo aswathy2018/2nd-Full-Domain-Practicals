@@ -16,12 +16,12 @@ class BST{
     }
 
     insert(val){
-        let node = new Node()
+        let node = new Node(val)
 
         if(this.isEmpty()){
             this.root = node
         }else{
-            this.insertNode(node, this.root)
+            this.insertNode(this.root, node)
         }
     }
 
@@ -46,9 +46,9 @@ class BST{
             if(root.val==val){
                 return true
             }else if(val<root.val){
-                this.search(val, root.left)
+                return this.search(val, root.left)
             }else{
-                this.search(val,root.right)
+                return this.search(val,root.right)
             }
         }
         return true
@@ -62,7 +62,7 @@ class BST{
         }
     }
 
-    preorder(node = this.rot){
+    preorder(node = this.root){
         if(node){
             console.log(node.val)
             this.preorder(node.left)
@@ -78,3 +78,13 @@ class BST{
         }
     }
 }
+
+let val = new BST()
+
+let arr = [21,56,34,9,55,76,22]
+
+for(let num of arr){
+    val.insert(num)
+}
+
+val.postorder()
