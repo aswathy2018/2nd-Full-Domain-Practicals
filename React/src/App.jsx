@@ -245,15 +245,16 @@
 // export default App
 
 
-import React from 'react'
-import CounterN from './CounterN'
+// import React from 'react'
+// import CounterN from './CounterN'
 
-const App = () => {
-  return (
-    <>
-    <CounterN/>
-    </>
-  )
-}
+// const App = () => {
+//   return (
+//     <>
+//     <CounterN/>
+//     </>
+//   )
+// }
 
-export default App
+// export default App
+
