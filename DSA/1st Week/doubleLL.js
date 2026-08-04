@@ -45,6 +45,26 @@ class LL{
         this.size++
     }
 
+    reverse() {
+        if (this.isEmpty()) {
+            return "List is empty";
+        }
+
+        let current = this.head;
+
+        while (current) {
+            let temp = current.next;
+            current.next = current.prev;
+            current.prev = temp;
+
+            current = current.prev;
+        }
+
+        let temp = this.head;
+        this.head = this.tail;
+        this.tail = temp;
+    }
+
     printF(){
         if(this.isEmpty()){
             return "List is empty.."

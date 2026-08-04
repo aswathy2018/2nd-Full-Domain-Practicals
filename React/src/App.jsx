@@ -259,18 +259,33 @@
 // export default App
 
 
-import { Routes, Route } from "react-router-dom";
-import API from "./context/API";
-import CartPage from "./context/CartPage";
-import CartProvider from "./context/CartProvider";
+// import { Routes, Route } from "react-router-dom";
+// import API from "./context/API";
+// import CartPage from "./context/CartPage";
+// import CartProvider from "./context/CartProvider";
 
-export default function App() {
-    return (
-        <CartProvider>
-            <Routes>
-                <Route path="/" element={<API />} />
-                <Route path="/cart" element={<CartPage />} />
-            </Routes>
-        </CartProvider>
-    );
+// export default function App() {
+//     return (
+//         <CartProvider>
+//             <Routes>
+//                 <Route path="/" element={<API />} />
+//                 <Route path="/cart" element={<CartPage />} />
+//             </Routes>
+//         </CartProvider>
+//     );
+// }
+
+
+
+import React from 'react'
+import Memo from './Practicals/Memo'
+
+const App = () => {
+  return (
+    <>
+    <Memo/>
+    </>
+  )
 }
+
+export default App
