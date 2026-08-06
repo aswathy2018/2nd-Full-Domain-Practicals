@@ -43,3 +43,26 @@ console.log(proxy.length)
 
 // proxy.name = "Aswathy";
 // console.log(proxy.name);
+
+
+///////////////////// If the place length that in the object is leass than 6 then =>
+///////////////////// show the length is less than 6 otherwise show the place
+
+// let obj = {
+//     place: "Thrissur"
+// }
+
+// let proxy = new Proxy(obj, {
+//     get(target, property){
+//         if(property=='place'){
+//             if(target.place.length<6){
+//                 return "Length is less than 6"
+//             }else{
+//                 return target.place
+//             }
+//         }
+//         return target[property]
+//     }
+// })
+
+// console.log(proxy.place)

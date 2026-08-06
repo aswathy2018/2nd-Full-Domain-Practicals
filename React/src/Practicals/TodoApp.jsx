@@ -1,57 +1,46 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useState } from 'react'
 
 const TodoApp = () => {
-    const [task, setTask] = useState("")
-    const [todos, setTodos] = useState([])
-    const [editId, setEditId] = useState(null)
+    let [task, setTask] = useState("")
+    let [todos, setTodo] = useState([])
+    let [editTodo, setEditTodo] = useState(null)
 
-    function handleSubmit(){
-        if(task.trim() === ""){
-            return
-        }
-
-        if(editId!==null){
-            const updateTodo = todos.map((todo) =>{
-                if(todo.id==editId){
-                    return {...todo, task: task}
-                }
-                return todo
-            })
-            setTodos(updateTodo)
-            setEditId(null)
+    function handleAdd(){
+        if(editTodo!==null){
+            const updated = [...todos]
+            updated[editTodo] = task
+            setTodo(updated)
+            setEditTodo(null)
         }else{
-            const newTodo = {
-                id: Date.now(),
-                task: task
-            }
-
-            setTodos([...todos, newTodo])
+            setTodo([...todos, task])
         }
         setTask("")
     }
 
-    function handleDelete(id){
-        const filterTodos = todos.filter((todo)=>todo.id!==id)
-        setTodos(filterTodos)
+    function handleDelete(index){
+        const update = todos.filter((_, i)=>i!==index)
+        setTodo(update)
     }
 
-    function handleEdit(todo){
-        setTask(todo.task)
-        setEditId(todo.id)
+    function handleEdit(index){
+        setTask(todos[index])
+        setEditTodo(index)
     }
-
   return (
     <div>
         <h2>Todo App</h2>
+        <input type="text" value={task} onChange={(e)=>setTask(e.target.value)}/>
 
-        <input type="text" placeholder='Enter Task' value={task} onChange={(e)=>setTask(e.target.value)}/>
-        <button onClick={handleSubmit}>{editId!==null?"Update":"Add"}</button>
+        <button onClick={handleAdd}>
+            {editTodo!==null?"Update" : "Add"}
+        </button>
 
-        {todos.map((todo)=>(
-            <div key = {todo.id}>
-                <span>{todo.task}</span>
-                <button onClick={()=>handleEdit(todo)}>Edit</button>
-                <button onClick={()=>handleDelete(todo.id)}>Delete</button>
+        {todos.map((todo, index)=>(
+            <div key={index}>
+                {todo}
+                <button onClick={()=>handleEdit(index)}>Edit</button>
+                <button onClick={()=>handleDelete(index)}>Delete</button>
             </div>
         ))}
     </div>

@@ -277,14 +277,29 @@
 
 
 
+// import React from 'react'
+// import Memo from './Practicals/Memo'
+
+// const App = () => {
+//   return (
+//     <>
+//     <Memo/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
 import React from 'react'
-import Memo from './Practicals/Memo'
+import Todo from './Practicals/TodoApp'
 
 const App = () => {
   return (
-    <>
-    <Memo/>
-    </>
+    <div>
+      <Todo/>
+    </div>
   )
 }
 
