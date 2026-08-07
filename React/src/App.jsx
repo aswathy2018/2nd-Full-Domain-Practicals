@@ -292,13 +292,43 @@
 
 
 
+// import React from 'react'
+// import Todo from './Practicals/TodoApp'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Todo/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+// import React from 'react'
+// import CounterReducer from './Practicals/CounterReducer'
+
+// const App = () => {
+//   return (
+//     <>
+//     <CounterReducer/>
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
 import React from 'react'
-import Todo from './Practicals/TodoApp'
+import CounterCallback from './Practicals/CounterCallback'
 
 const App = () => {
   return (
     <div>
-      <Todo/>
+      <CounterCallback/>
     </div>
   )
 }
