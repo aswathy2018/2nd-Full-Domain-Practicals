@@ -15,4 +15,4 @@ function printing(n, index=0){
     printing(n, index+1)
 }
 
-printing(8)
+printing(9)

@@ -1,4 +1,4 @@
-let arr = [1, [2, [3, 4]], 5]
+let arr = [1, [2, [3, [9], 4]], 5]
 
 function flatten(arr, index = 0, res = []){
     if(index>=arr.length){
