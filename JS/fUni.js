@@ -15,4 +15,4 @@ function unique(arr){
     return "No unique"
 }
 
-console.log(unique("google"))
+console.log(unique("whatsapp"))

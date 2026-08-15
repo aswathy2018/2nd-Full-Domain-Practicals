@@ -20,10 +20,10 @@ class Balance{
 
 let val = new Balance()
 
-val.deposit(3000)
+val.deposit(5000)
 
 console.log(val.balance())
 
-val.withdraw(2500)
+val.withdraw(3500)
 
 console.log(val.balance())
