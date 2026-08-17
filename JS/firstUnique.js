@@ -1,4 +1,4 @@
-let str="google"
+let str="jsbdjvifgb"
 let freq = {}
 
 for(let val of str){
