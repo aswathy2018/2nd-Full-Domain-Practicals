@@ -322,14 +322,30 @@
 
 
 
+// import React from 'react'
+// import CounterCallback from './Practicals/CounterCallback'
+
+// const App = () => {
+//   return (
+//     <div>
+//       <CounterCallback/>
+//     </div>
+//   )
+// }
+
+// export default App
+
+
+
+
 import React from 'react'
-import CounterCallback from './Practicals/CounterCallback'
+import CleanUp from './Practicals/CleanUp'
 
 const App = () => {
   return (
-    <div>
-      <CounterCallback/>
-    </div>
+    <>
+    <CleanUp/>
+    </>
   )
 }
 
