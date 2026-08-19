@@ -1,12 +1,12 @@
 class Inheritance{
     person(){
-        console.log("Hii my name is Athira")
+        console.log("Hii my name is Aswathy")
     }
 }
 
 class Child extends Inheritance{
     job(){
-        console.log("I'm a developer")
+        console.log("I'm a MERN Stack developer")
     }
 }
 
